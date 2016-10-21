@@ -5,20 +5,35 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="pt-br">
 <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Curitiba Software</title>
   <meta name="description" content="">
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
+
 <body>
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -26,15 +41,24 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-        <a class="navbar-brand" href="#"><img src="img/logo-curitiba-software.png" alt="Logo Curitiba Software" class="logo" width="20"> Curitiba Software</a> </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="img/logo-curitiba-software.png" alt="Logo Curitiba Software" class="logo" width="20"> Curitiba Software</a>
+      </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Produtos</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
+        <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Meu Consultório Pet</a></li>
+              <li><a href="#">Sistemas Admin</a></li>
+              <li><a href="#">Dashboards</a></li>
+            </ul>
+          </li>
           <li><a href="#">Serviço</a></li>
           <li><a href="#">Equipe</a></li>
-           <li><a href="#">Contato</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -43,15 +67,11 @@
     <div class="container">
       <div class="col-md-6">
         <h1>Meu Consultório Pet</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate sem est, 
-		ut vehicula mauris bibendum ut. Fusce commodo, diam ac malesuada venenatis, 
-		nunc nisi luctus nisi, vel pharetra massa tellus ut velit. Aliquam tristique 
-		vehicula fringilla. Fusce dapibus urna sapien. Mauris nec sapien eget orci 
-		malesuada pellentesque. Mau
-	</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate sem est, ut vehicula mauris bibendum ut. Fusce commodo, diam ac malesuada venenatis, nunc nisi luctus nisi, vel pharetra massa tellus ut velit. Aliquam tristique vehicula fringilla. Fusce dapibus urna sapien. Mauris nec sapien eget orci malesuada pellentesque. Mau
+        </p>
       </div>
-      <div class="col-md-6"> 
-      <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow bounce"> </div>
+      <div class="col-md-6">
+        <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow bounce"> </div>
       <div class="container">
         <div class="col-md-6">Teste </div>
       </div>
@@ -73,4 +93,5 @@
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
