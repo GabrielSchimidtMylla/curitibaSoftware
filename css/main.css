@@ -1,1 +1,50 @@
-body{-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-family:"Droid Sans",sans-serif}h1,h2,h3{font-family:"Lato",sans-serif}.circle{width:10px;height:10px;border-radius:50%;position:absolute;z-index:-1}.circle:nth-child(3n-1){width:7px;height:7px;opacity:0.3 !important}.circle:nth-child(9n-1){width:5px;height:5px}.circle:nth-child(40n-1){width:20px;height:20px}.logo{float:left;margin-right:10px}
+/* line 3, ../sass/main.sass */
+body {
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 8, ../sass/main.sass */
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 11, ../sass/main.sass */
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+/* line 17, ../sass/main.sass */
+.circle:nth-child(3n-1) {
+  width: 7px;
+  height: 7px;
+  opacity: 0.3 !important;
+}
+/* line 21, ../sass/main.sass */
+.circle:nth-child(9n-1) {
+  width: 5px;
+  height: 5px;
+}
+/* line 24, ../sass/main.sass */
+.circle:nth-child(40n-1) {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 27, ../sass/main.sass */
+.logo {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 30, ../sass/main.sass */
+.bolinas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
