@@ -51,8 +51,8 @@ $(function () {
     var ball = document.createElement("span");
     ball.style.backgroundColor = cores[(Math.random() * cores.length) | 0];
     ball.className = "circle animated fadeIn";
-    ball.style.left = left;
-    ball.style.top = top;
+    ball.style.left = left + 'px';
+    ball.style.top = top + 'px';
     body.append(ball);
     startBounce($(ball));
     if (counter <= 10) {
