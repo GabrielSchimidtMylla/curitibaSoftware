@@ -1,0 +1,26 @@
+@import '_variaveis'
+
+body
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+  font-family: $font-droid
+
+h1, h2, h3
+  font-famliy: $font-lato
+  
+.circle
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  position: absolute
+  z-index: -1
+  &:nth-child(3n-1)
+    width: 7px
+    height: 7px
+    opacity: 0.3 !important
+  &:nth-child(9n-1)
+    width: 5px
+    height: 5px
+  &:nth-child(40n-1)
+    width: 20px
+    height: 20px
