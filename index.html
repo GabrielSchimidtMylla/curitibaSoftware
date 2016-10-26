@@ -27,35 +27,30 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"> </head>
 
 <body>
-      <div class="bolinas hidden-xs">
-        <canvas id="canvas"></canvas>
-    </div>
+  <div class="bolinas hidden-xs">
+    <canvas id="canvas"></canvas>
+  </div>
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
   <nav class="navbar wow fadeInDown">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
-          <span class="icon-bar"></span> 
-          <span class="icon-bar"></span> 
-          <span class="icon-bar"></span> 
-        </button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand" data-wow-delay="0.9s" href="#"><img src="img/logo-curitiba-software.png" alt="Logo Curitiba Software" class="logo" width="20"> Curitiba Software</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
         <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Meu Consultório Pet</a></li>
@@ -70,17 +65,45 @@
       </div>
     </div>
   </nav>
-  <header class="container-fluid">
+  <header class="container-fluid" id="main">
     <div class="container">
       <div class="col-md-6">
         <h1 class="wow fadeInLeft" data-wow-delay="0.3s">Meu Consultório Pet</h1>
-        <p class="wow fadeInLeft" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate sem est, ut vehicula mauris bibendum ut. Fusce commodo, diam ac malesuada venenatis, nunc nisi luctus nisi, vel pharetra massa tellus ut velit. Aliquam tristique vehicula fringilla. Fusce dapibus urna sapien. Mauris nec sapien eget orci malesuada pellentesque. Mau
-        </p>
+        <p class="wow fadeInLeft" data-wow-delay="0.5s">Você já penso em ter controle total do seu PetShop em apenas um lugar, agenda, clientes, finanças, produtos, histórioco de cada pet. Meu Consultório Pet faz tudo isso e muito mais.</p>
+        <div class="col-md-12 text-right">
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow fadeInDown"  data-wow-delay="0.5s"> </div>
+      <div class="col-md-6"> <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow fadeInDown" data-wow-delay="0.5s"> </div>
       <div class="container">
-        <div class="col-md-6">Teste </div>
+        <h2 class="text-center">Veja no que podemos te ajudar.</h2>
+        <!-- NOTE: Categoria Web Sites-->
+        <div class="row">
+          <div class="col-md-3"> <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow fadeInDown" data-wow-delay="0.5s"></div>
+          <div class="col-md-9">
+            <h3>Web Sites</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, metus a gravida viverra, mi erat mattis libero, vel ornare massa quam quis mauris. Aliquam erat volutpat. Nulla a egestas metus. Aenean sapien leo, auctor vitae nulla convallis, molestie egestas quam. Ut ultrices rhoncus diam vel dictum. Curabitur malesuada tortor nec congue semper. Fusce dictum turpis neque. Phasellus accumsan eu sapien sed condimentum. Ut commodo et turpis et dapibus. Duis a rhoncus est. </p>
+          </div>
+          <div class="col-md-12 slide">
+           <hr>
+            <!--NOTE: Galeria slick-->
+            <div class="col-md-2"> <img src="img/logos/criar-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/caputring-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/ibnv-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/nwm-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/zm-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/ibnv-pb.png" /> </div>
+          </div>
+        </div>
+               <hr>
+        <!-- NOTE:Categoria Vitrines-->
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Vitrines</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, metus a gravida viverra, mi erat mattis libero, vel ornare massa quam quis mauris. Aliquam erat volutpat. Nulla a egestas metus. Aenean sapien leo, auctor vitae nulla convallis, molestie egestas quam. Ut ultrices rhoncus diam vel dictum. Curabitur malesuada tortor nec congue semper. Fusce dictum turpis neque. Phasellus accumsan eu sapien sed condimentum. Ut commodo et turpis et dapibus. Duis a rhoncus est. </p>
+          </div>
+          <div class="col-md-3">Imagem</div>
+        </div>
       </div>
     </div>
   </header>
@@ -99,6 +122,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <!--
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slide').slick({
+        infinite: true
+        , slidesToShow: 5
+        , slidesToScroll: 3
+        , autoplay: true
+        , autoplaySpeed: 2000
+      , });
+    });
+  </script>
+-->
 </body>
 
 </html>
