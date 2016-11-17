@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -11,59 +11,120 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Curitiba Software</title>
   <meta name="description" content="">
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato" rel="stylesheet"> 
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <body>
+  <div class="bolinas hidden-xs">
+    <canvas id="canvas"></canvas>
+  </div>
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <nav class="navbar">
+  <nav class="navbar wow fadeInDown">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Curitiba Software</a> </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" data-wow-delay="0.9s" href="#"><img src="img/logo-curitiba-software.png" alt="Logo Curitiba Software" class="logo" width="20"> Curitiba Software</a>
+      </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
+        <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Meu Consultório Pet</a></li>
+              <li><a href="#">Sistemas Admin</a></li>
+              <li><a href="#">Dashboards</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Serviço</a></li>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <header class="container-fluid">
+  <header class="container-fluid" id="main">
     <div class="container">
       <div class="col-md-6">
-        <h1>Curitiba Software</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate sem est, ut vehicula mauris bibendum ut. Fusce commodo, diam ac malesuada venenatis, nunc nisi luctus nisi, vel pharetra massa tellus ut velit. Aliquam tristique vehicula fringilla. Fusce dapibus urna sapien. Mauris nec sapien eget orci malesuada pellentesque. Mau</p>
+        <h1 class="wow fadeInLeft" data-wow-delay="0.3s">Meu Consultório Pet</h1>
+        <p class="wow fadeInLeft" data-wow-delay="0.5s">Você já penso em ter controle total do seu PetShop em apenas um lugar, agenda, clientes, finanças, produtos, histórico de cada pet. Meu Consultório Pet faz tudo isso e muito mais.</p>
+        <div class="col-md-12">
+                    <label><i class="fa fa-rocket" aria-hidden="true"></i> Lançamento se aproxima, seja um dos primeiros!</label>
+        <!--NOTE: CONTADOR-->
+        <div id="contadorMCP"></div>
+            <a href="#" class="btn btn-success btn-block">Saiba Mais</a>
+        </div>
       </div>
-      <div class="col-md-6"> <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive"> </div>
+      <div class="col-md-6"> <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow fadeInDown" data-wow-delay="0.5s"> </div>
       <div class="container">
-        <div class="col-md-6">Teste </div>
+        <h2 class="text-center">Veja no que podemos te ajudar.</h2>
+        <!-- NOTE: Categoria Web Sites-->
+        <div class="row">
+          <div class="col-md-3"> <img src="http://3.bp.blogspot.com/-xOzpfwtFsOA/VbS57lywVzI/AAAAAAAAEXM/jAp8GyudKa8/s1600/friendly%2Bgames-%2BGoTech.png" class="img-responsive wow fadeInDown" data-wow-delay="0.5s"></div>
+          <div class="col-md-9">
+            <h3>Web Sites</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, metus a gravida viverra, mi erat mattis libero, vel ornare massa quam quis mauris. Aliquam erat volutpat. Nulla a egestas metus. Aenean sapien leo, auctor vitae nulla convallis, molestie egestas quam. Ut ultrices rhoncus diam vel dictum. Curabitur malesuada tortor nec congue semper. Fusce dictum turpis neque. Phasellus accumsan eu sapien sed condimentum. Ut commodo et turpis et dapibus. Duis a rhoncus est. </p>
+          </div>
+          <div class="col-md-12 slide">
+           <hr>
+            <!--NOTE: Galeria slick-->
+            <div class="col-md-2"> <img src="img/logos/criar-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/caputring-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/ibnv-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/nwm-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/zm-pb.png" /> </div>
+            <div class="col-md-2"> <img src="img/logos/ibnv-pb.png" /> </div>
+          </div>
+        </div>
+        <hr/>
+        <!-- NOTE:Categoria Vitrines-->
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Vitrines</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, metus a gravida viverra, mi erat mattis libero, vel ornare massa quam quis mauris. Aliquam erat volutpat. Nulla a egestas metus. Aenean sapien leo, auctor vitae nulla convallis, molestie egestas quam. Ut ultrices rhoncus diam vel dictum. Curabitur malesuada tortor nec congue semper. Fusce dictum turpis neque. Phasellus accumsan eu sapien sed condimentum. Ut commodo et turpis et dapibus. Duis a rhoncus est. </p>
+          </div>
+          <div class="col-md-3">Imagem</div>
+        </div>
       </div>
     </div>
   </header>
   <div class="container">
     <!-- Example row of columns -->
   </div>
-  <hr>
+  <hr/>
   <footer class="container">
     <p>&copy; Curitiba Software 2016</p>
   </footer>
-  </div>
   <!-- /container -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" async defer></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/main.js" async defer></script>
 </body>
 
 </html>

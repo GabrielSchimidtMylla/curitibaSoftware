@@ -6,21 +6,25 @@ body
   font-family: $font-droid
 
 h1, h2, h3
-  font-famliy: $font-lato
+  font-family: $font-lato
   
 .circle
   width: 10px
   height: 10px
   border-radius: 50%
+.logo
+  float: left
+  margin-right: 5px
+.bolinas
   position: absolute
-  z-index: -1
-  &:nth-child(3n-1)
-    width: 7px
-    height: 7px
-    opacity: 0.3 !important
-  &:nth-child(9n-1)
-    width: 5px
-    height: 5px
-  &:nth-child(40n-1)
-    width: 20px
-    height: 20px
+  top: 0
+  left: 0
+  z-index: -1    
+.icon-bar
+  background: #337ab7
+.navbar-toggle:hover 
+  background: #f0f0f0
+#contadorMCP
+  border: 1px solid #ccc
+  text-align: center
+  padding: 10px
