@@ -7,7 +7,38 @@ $("#contadorMCP")
       event.strftime('%D Dias %H:%M:%S')
     );
   });
-
+//NOTE: ANIMAÇÃO SLICK
+$(document).ready(function () {
+    
+    $('#slideTop').slick({ autoplay: true, autoplaySpeed: 4000});
+    $('#slide').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+              breakpoint: 768,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 2
+              }
+          },
+          {
+              breakpoint: 480,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+              }
+          }
+        ]
+    });
+});
 //NOTE: ANIMACÃO BACKGROUND 
 (function () {
   //Constantes

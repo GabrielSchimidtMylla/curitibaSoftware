@@ -47,3 +47,8 @@ h1, h2, h3 {
   text-align: center;
   padding: 10px;
 }
+
+.slick-track>div
+{
+    outline:none;
+}
